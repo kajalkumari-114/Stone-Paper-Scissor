@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(15, 15, 15);
+    color: wheat;
+    line-height: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem; 
+    /* background-color: red; */
+}
+.choice {
+    height: 140px;
+    width: 140px;
+    background-color: rgba(255, 0, 0, 0.829);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color:gold;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 4rem;
+    font-weight: 600;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+#msg {
+    font-size: 2rem;
+    color: wheat;
+    background-color:rgb(15, 15, 15);
+    margin-top: 5rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        gap: 3rem;
+    }
+
+    .choice {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(255, 0, 0, 0.829);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        height: 5.75rem;
+        width: 5.75rem;
+        object-fit: cover;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+
+    #user-score,
+    #comp-score {
+    font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 475px) {
+
+    .container {
+        gap: 3rem;
+    }
+
+    .choice {
+        height: 70px;
+        width: 70px;
+        background-color: rgba(255, 0, 0, 0.829);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        height: 3.75rem;
+        width: 3.75rem;
+        object-fit: cover;
+    }
+}
